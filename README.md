@@ -26,7 +26,7 @@ Built a Random Forest classifier to predict crime category based on time and loc
 
 ## Tableau Dashboard
 Interactive dashboard published on Tableau Public:
-[Dallas Crime Analysis Dashboard](YOUR_TABLEAU_LINK_HERE)
+[Dallas Crime Analysis Dashboard](https://public.tableau.com/app/profile/anitha.morampudi/viz/DallasCrimeAnalysisDashboard/DallasCrimeAnalysisDashboardshboard1)
 
 ## Tools Used
 - Python (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, folium)
