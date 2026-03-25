@@ -1,0 +1,3461 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='DallasCrimeAnalysisDashboard' path='/workbooks' revision='1.1' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='dallas_crime_tableau' inline='true' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dallas_crime_tableau' name='textscan.01rgiog1i6usgp16nowk31gzzj3q'>
+            <connection class='textscan' directory='C:/Users/anith/Projects_Portfolio/Dallas Crime Analysis Prediction/data' filename='dallas_crime_tableau.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.01rgiog1i6usgp16nowk31gzzj3q' name='dallas_crime_tableau.csv' table='[dallas_crime_tableau#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Incident Number w/year' ordinal='0' />
+            <column datatype='integer' name='Year of Incident' ordinal='1' />
+            <column datatype='string' name='Service Number ID' ordinal='2' />
+            <column datatype='integer' name='Watch' ordinal='3' />
+            <column datatype='string' name='Call (911) Problem' ordinal='4' />
+            <column datatype='string' name='Type of Incident' ordinal='5' />
+            <column datatype='string' name='Type  Location' ordinal='6' />
+            <column datatype='string' name='Incident Address' ordinal='7' />
+            <column datatype='real' name='Reporting Area' ordinal='8' />
+            <column datatype='real' name='Beat' ordinal='9' />
+            <column datatype='string' name='Division' ordinal='10' />
+            <column datatype='real' name='Sector' ordinal='11' />
+            <column datatype='string' name='Council District' ordinal='12' />
+            <column datatype='datetime' name='Date1 of Occurrence' ordinal='13' />
+            <column datatype='integer' name='Year1 of Occurrence' ordinal='14' />
+            <column datatype='string' name='Month1 of Occurence' ordinal='15' />
+            <column datatype='string' name='Day1 of the Week' ordinal='16' />
+            <column datatype='datetime' name='Time1 of Occurrence' ordinal='17' />
+            <column datatype='integer' name='Day1 of the Year' ordinal='18' />
+            <column datatype='datetime' name='Date2 of Occurrence ' ordinal='19' />
+            <column datatype='real' name='Year2 of Occurrence' ordinal='20' />
+            <column datatype='string' name='Month2 of Occurence' ordinal='21' />
+            <column datatype='string' name='Day2 of the Week' ordinal='22' />
+            <column datatype='datetime' name='Time2 of Occurrence' ordinal='23' />
+            <column datatype='real' name='Day2 of the Year' ordinal='24' />
+            <column datatype='datetime' name='Date of Report' ordinal='25' />
+            <column datatype='datetime' name='Date incident created' ordinal='26' />
+            <column datatype='integer' name='Offense Entered Year' ordinal='27' />
+            <column datatype='string' name='Offense Entered Month' ordinal='28' />
+            <column datatype='string' name='Offense Entered Day of the Week' ordinal='29' />
+            <column datatype='datetime' name='Offense Entered Time' ordinal='30' />
+            <column datatype='integer' name='Offense Entered  Date/Time' ordinal='31' />
+            <column datatype='string' name='CFS Number' ordinal='32' />
+            <column datatype='datetime' name='Call Received Date Time' ordinal='33' />
+            <column datatype='datetime' name='Call Date Time' ordinal='34' />
+            <column datatype='datetime' name='Call Cleared Date Time' ordinal='35' />
+            <column datatype='datetime' name='Call Dispatch Date Time' ordinal='36' />
+            <column datatype='string' name='Person Involvement Type' ordinal='37' />
+            <column datatype='string' name='Victim Type' ordinal='38' />
+            <column datatype='integer' name='Responding Officer #1  Badge No' ordinal='39' />
+            <column datatype='string' name='Responding Officer #1  Name' ordinal='40' />
+            <column datatype='integer' name='Reporting Officer Badge No' ordinal='41' />
+            <column datatype='integer' name='Reviewing Officer Badge No' ordinal='42' />
+            <column datatype='string' name='Element Number Assigned' ordinal='43' />
+            <column datatype='string' name='Offense Status' ordinal='44' />
+            <column datatype='string' name='UCR Disposition' ordinal='45' />
+            <column datatype='string' name='Modus Operandi (MO)' ordinal='46' />
+            <column datatype='boolean' name='Family Offense' ordinal='47' />
+            <column datatype='string' name='Drug Related Istevencident' ordinal='48' />
+            <column datatype='string' name='RMS Code' ordinal='49' />
+            <column datatype='real' name='Criminal Justice Information Service Code' ordinal='50' />
+            <column datatype='string' name='Penal Code' ordinal='51' />
+            <column datatype='string' name='NIBRS Crime' ordinal='52' />
+            <column datatype='string' name='NIBRS Crime Category' ordinal='53' />
+            <column datatype='string' name='NIBRS Crime Against' ordinal='54' />
+            <column datatype='string' name='NIBRS Code' ordinal='55' />
+            <column datatype='string' name='NIBRS Group' ordinal='56' />
+            <column datatype='string' name='NIBRS Type' ordinal='57' />
+            <column datatype='datetime' name='Update Date' ordinal='58' />
+            <column datatype='real' name='X Coordinate' ordinal='59' />
+            <column datatype='real' name='Y Cordinate' ordinal='60' />
+            <column datatype='real' name='Zip Code' ordinal='61' />
+            <column datatype='string' name='City' ordinal='62' />
+            <column datatype='string' name='State' ordinal='63' />
+            <column datatype='string' name='Location1' ordinal='64' />
+            <column datatype='integer' name='Hour' ordinal='65' />
+            <column datatype='real' name='Longitude' ordinal='66' />
+            <column datatype='real' name='Latitude' ordinal='67' />
+            <column datatype='real' name='Response Time (mins)' ordinal='68' />
+            <column datatype='real' name='Resolution Time (mins)' ordinal='69' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Number w/year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incident Number w/year]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Incident Number w/year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year of Incident</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year of Incident]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Year of Incident</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Service Number ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Service Number ID]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Service Number ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Watch</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Watch]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Watch</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Call (911) Problem</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Call (911) Problem]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Call (911) Problem</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type of Incident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type of Incident]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Type of Incident</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type  Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type  Location]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Type  Location</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Incident Address</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Incident Address]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Incident Address</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reporting Area</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Reporting Area]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Reporting Area</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Beat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Beat]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Beat</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Division]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Division</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sector</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sector]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Sector</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Council District</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Council District]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Council District</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date1 of Occurrence</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date1 of Occurrence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Date1 of Occurrence</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year1 of Occurrence</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year1 of Occurrence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Year1 of Occurrence</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month1 of Occurence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month1 of Occurence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Month1 of Occurence</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day1 of the Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day1 of the Week]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Day1 of the Week</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time1 of Occurrence</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time1 of Occurrence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Time1 of Occurrence</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day1 of the Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Day1 of the Year]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Day1 of the Year</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date2 of Occurrence </remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date2 of Occurrence ]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Date2 of Occurrence </remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year2 of Occurrence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Year2 of Occurrence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Year2 of Occurrence</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month2 of Occurence</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month2 of Occurence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Month2 of Occurence</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day2 of the Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Day2 of the Week]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Day2 of the Week</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time2 of Occurrence</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Time2 of Occurrence]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Time2 of Occurrence</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Day2 of the Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Day2 of the Year]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Day2 of the Year</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date of Report</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date of Report]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Date of Report</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date incident created</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date incident created]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Date incident created</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Entered Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offense Entered Year]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Offense Entered Year</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Entered Month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Offense Entered Month]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Offense Entered Month</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Entered Day of the Week</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Offense Entered Day of the Week]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Offense Entered Day of the Week</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Entered Time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Offense Entered Time]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Offense Entered Time</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Entered  Date/Time</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Offense Entered  Date/Time]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Offense Entered  Date/Time</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CFS Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CFS Number]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>CFS Number</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Call Received Date Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Call Received Date Time]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Call Received Date Time</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Call Date Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Call Date Time]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Call Date Time</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Call Cleared Date Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Call Cleared Date Time]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Call Cleared Date Time</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Call Dispatch Date Time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Call Dispatch Date Time]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Call Dispatch Date Time</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Person Involvement Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Person Involvement Type]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Person Involvement Type</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Victim Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Victim Type]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Victim Type</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Responding Officer #1  Badge No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Responding Officer #1  Badge No]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Responding Officer #1  Badge No</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Responding Officer #1  Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Responding Officer #1  Name]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Responding Officer #1  Name</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reporting Officer Badge No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reporting Officer Badge No]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Reporting Officer Badge No</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reviewing Officer Badge No</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Reviewing Officer Badge No]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Reviewing Officer Badge No</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Element Number Assigned</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Element Number Assigned]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Element Number Assigned</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Offense Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Offense Status]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Offense Status</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>UCR Disposition</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[UCR Disposition]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>UCR Disposition</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Modus Operandi (MO)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Modus Operandi (MO)]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Modus Operandi (MO)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Family Offense</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Family Offense]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Family Offense</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Drug Related Istevencident</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Drug Related Istevencident]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Drug Related Istevencident</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RMS Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[RMS Code]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>RMS Code</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Criminal Justice Information Service Code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Criminal Justice Information Service Code]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Criminal Justice Information Service Code</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penal Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Penal Code]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Penal Code</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIBRS Crime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIBRS Crime]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>NIBRS Crime</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIBRS Crime Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIBRS Crime Category]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>NIBRS Crime Category</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIBRS Crime Against</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIBRS Crime Against]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>NIBRS Crime Against</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIBRS Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIBRS Code]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>NIBRS Code</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIBRS Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIBRS Group]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>NIBRS Group</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NIBRS Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NIBRS Type]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>NIBRS Type</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Update Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Update Date]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Update Date</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>X Coordinate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[X Coordinate]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>X Coordinate</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Y Cordinate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Y Cordinate]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Y Cordinate</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Zip Code</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Zip Code]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Zip Code</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>City</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[City]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>City</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location1]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Location1</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hour]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Hour</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Longitude]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Longitude</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Latitude]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Latitude</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Response Time (mins)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Response Time (mins)]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Response Time (mins)</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resolution Time (mins)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Resolution Time (mins)]</local-name>
+            <parent-name>[dallas_crime_tableau.csv]</parent-name>
+            <remote-alias>Resolution Time (mins)</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[City]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Date2 of Occurrence' datatype='datetime' name='[Date2 of Occurrence ]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[Offense Entered Time]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column aggregation='Hour' datatype='datetime' name='[Time1 of Occurrence]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' datatype='datetime' name='[Time2 of Occurrence]' role='dimension' type='ordinal' />
+      <column aggregation='Sum' datatype='real' default-format='*00000' name='[Zip Code]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column caption='dallas_crime_tableau.csv' datatype='table' name='[__tableau_internal_object_id__].[dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B]' role='measure' type='quantitative' />
+      <column-instance column='[NIBRS Crime Category]' derivation='None' name='[none:NIBRS Crime Category:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/anith/AppData/Local/Temp/TableauTemp/#TableauTemp_0vrme0b1ahfm7v1eo5l7d1q3r7wn.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Incident Number w/year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident Number w/year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident Number w/year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year of Incident</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year of Incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year of Incident</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Service Number ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Service Number ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Service Number ID</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>339346</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Watch</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Watch]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Watch</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Call (911) Problem</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Call (911) Problem]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Call (911) Problem</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>179</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of Incident</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of Incident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of Incident</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>796</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type  Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type  Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type  Location</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Incident Address</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Incident Address]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Incident Address</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>54340</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reporting Area</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Reporting Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reporting Area</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4127</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Beat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Beat]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Beat</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>388</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Division</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Division]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Division</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sector</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sector</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>35</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Council District</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Council District]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Council District</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date1 of Occurrence</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date1 of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date1 of Occurrence</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5798</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year1 of Occurrence</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year1 of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year1 of Occurrence</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month1 of Occurence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month1 of Occurence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month1 of Occurence</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day1 of the Week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day1 of the Week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day1 of the Week</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time1 of Occurrence</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Time1 of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time1 of Occurrence</remote-alias>
+              <ordinal>17</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>5275</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day1 of the Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Day1 of the Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day1 of the Year</remote-alias>
+              <ordinal>18</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>575</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date2 of Occurrence </remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date2 of Occurrence ]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date2 of Occurrence </remote-alias>
+              <ordinal>19</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>5256</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year2 of Occurrence</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Year2 of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year2 of Occurrence</remote-alias>
+              <ordinal>20</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month2 of Occurence</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month2 of Occurence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month2 of Occurence</remote-alias>
+              <ordinal>21</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day2 of the Week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Day2 of the Week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day2 of the Week</remote-alias>
+              <ordinal>22</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Time2 of Occurrence</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Time2 of Occurrence]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Time2 of Occurrence</remote-alias>
+              <ordinal>23</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>5321</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Day2 of the Year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Day2 of the Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Day2 of the Year</remote-alias>
+              <ordinal>24</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>550</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date of Report</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date of Report]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date of Report</remote-alias>
+              <ordinal>25</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date incident created</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Date incident created]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date incident created</remote-alias>
+              <ordinal>26</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offense Entered Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Offense Entered Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offense Entered Year</remote-alias>
+              <ordinal>27</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offense Entered Month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Offense Entered Month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offense Entered Month</remote-alias>
+              <ordinal>28</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offense Entered Day of the Week</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Offense Entered Day of the Week]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offense Entered Day of the Week</remote-alias>
+              <ordinal>29</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offense Entered Time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Offense Entered Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offense Entered Time</remote-alias>
+              <ordinal>30</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>7779</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offense Entered  Date/Time</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Offense Entered  Date/Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offense Entered  Date/Time</remote-alias>
+              <ordinal>31</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>513</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CFS Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CFS Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CFS Number</remote-alias>
+              <ordinal>32</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Call Received Date Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Call Received Date Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Call Received Date Time</remote-alias>
+              <ordinal>33</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>307003</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Call Date Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Call Date Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Call Date Time</remote-alias>
+              <ordinal>34</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Call Cleared Date Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Call Cleared Date Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Call Cleared Date Time</remote-alias>
+              <ordinal>35</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Call Dispatch Date Time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Call Dispatch Date Time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Call Dispatch Date Time</remote-alias>
+              <ordinal>36</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Person Involvement Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Person Involvement Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Person Involvement Type</remote-alias>
+              <ordinal>37</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Victim Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Victim Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Victim Type</remote-alias>
+              <ordinal>38</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Responding Officer #1  Badge No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Responding Officer #1  Badge No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Responding Officer #1  Badge No</remote-alias>
+              <ordinal>39</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8658</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Responding Officer #1  Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Responding Officer #1  Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Responding Officer #1  Name</remote-alias>
+              <ordinal>40</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8705</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reporting Officer Badge No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Reporting Officer Badge No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reporting Officer Badge No</remote-alias>
+              <ordinal>41</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8708</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Reviewing Officer Badge No</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Reviewing Officer Badge No]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Reviewing Officer Badge No</remote-alias>
+              <ordinal>42</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Element Number Assigned</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Element Number Assigned]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Element Number Assigned</remote-alias>
+              <ordinal>43</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8075</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Offense Status</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Offense Status]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Offense Status</remote-alias>
+              <ordinal>44</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>UCR Disposition</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[UCR Disposition]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>UCR Disposition</remote-alias>
+              <ordinal>45</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Modus Operandi (MO)</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Modus Operandi (MO)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Modus Operandi (MO)</remote-alias>
+              <ordinal>46</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>58418</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Family Offense</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Family Offense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Family Offense</remote-alias>
+              <ordinal>47</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Drug Related Istevencident</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Drug Related Istevencident]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Drug Related Istevencident</remote-alias>
+              <ordinal>48</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RMS Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[RMS Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RMS Code</remote-alias>
+              <ordinal>49</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>796</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Criminal Justice Information Service Code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Criminal Justice Information Service Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Criminal Justice Information Service Code</remote-alias>
+              <ordinal>50</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>419</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Penal Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Penal Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Penal Code</remote-alias>
+              <ordinal>51</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>555</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIBRS Crime</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIBRS Crime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIBRS Crime</remote-alias>
+              <ordinal>52</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIBRS Crime Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIBRS Crime Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIBRS Crime Category</remote-alias>
+              <ordinal>53</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIBRS Crime Against</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIBRS Crime Against]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIBRS Crime Against</remote-alias>
+              <ordinal>54</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIBRS Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIBRS Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIBRS Code</remote-alias>
+              <ordinal>55</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIBRS Group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIBRS Group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIBRS Group</remote-alias>
+              <ordinal>56</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NIBRS Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NIBRS Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NIBRS Type</remote-alias>
+              <ordinal>57</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Update Date</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Update Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Update Date</remote-alias>
+              <ordinal>58</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>317785</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>X Coordinate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[X Coordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>X Coordinate</remote-alias>
+              <ordinal>59</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69913</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Y Cordinate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Y Cordinate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Y Cordinate</remote-alias>
+              <ordinal>60</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69913</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Zip Code</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Zip Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Zip Code</remote-alias>
+              <ordinal>61</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>City</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[City]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>City</remote-alias>
+              <ordinal>62</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>63</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location1</remote-alias>
+              <ordinal>64</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>82617</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hour</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hour]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hour</remote-alias>
+              <ordinal>65</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Longitude</remote-alias>
+              <ordinal>66</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69913</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Latitude</remote-alias>
+              <ordinal>67</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69913</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Response Time (mins)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Response Time (mins)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Response Time (mins)</remote-alias>
+              <ordinal>68</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41399</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Resolution Time (mins)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Resolution Time (mins)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resolution Time (mins)</remote-alias>
+              <ordinal>69</ordinal>
+              <family>dallas_crime_tableau.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90539</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:NIBRS Crime Category:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;DESTRUCTION/ DAMAGE/ VANDALISM OF PROPERTY&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;TRAFFIC VIOLATION - HAZARDOUS&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;ALL OTHER OFFENSES&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;LARCENY/ THEFT OFFENSES&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;BRIBERY&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;PORNOGRAPHY/ OBSCENE MATERIAL&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;EMBEZZELMENT&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;DISORDERLY CONDUCT&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;TRAFFIC VIOLATION - NON HAZARDOUS&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;BURGLARY/ BREAKING &amp; ENTERING&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;PUBLIC INTOXICATION&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;HUMAN TRAFFICKING&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;ANIMAL OFFENSES&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;LIQUOR LAW VIOLATIONS&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;GAMBLING OFFENSES&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;COUNTERFEITING / FORGERY&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;ROBBERY&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;EXTORTION/ BLACKMAIL&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;FAMILY OFFENSES, NONVIOLENT&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;HOMICIDE OFFENSES&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;KIDNAPPING/ ABDUCTION&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;DRIVING UNDER THE INFLUENCE&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;TRESPASS OF REAL PROPERTY&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;CURFEW/ LOITERING/ VAGRANCY VIOLATIONS&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;STOLEN PROPERTY OFFENSES&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;ARSON&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;MISCELLANEOUS&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;FRAUD OFFENSES&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;DRUG/ NARCOTIC VIOLATIONS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;WEAPON LAW VIOLATIONS&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;ASSAULT OFFENSES&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;MOTOR VEHICLE THEFT&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='dallas_crime_tableau.csv' id='dallas_crime_tableau.csv_57E8E37859A449B2A6DF02A3090C529B'>
+            <properties context=''>
+              <relation connection='textscan.01rgiog1i6usgp16nowk31gzzj3q' name='dallas_crime_tableau.csv' table='[dallas_crime_tableau#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Incident Number w/year' ordinal='0' />
+                  <column datatype='integer' name='Year of Incident' ordinal='1' />
+                  <column datatype='string' name='Service Number ID' ordinal='2' />
+                  <column datatype='integer' name='Watch' ordinal='3' />
+                  <column datatype='string' name='Call (911) Problem' ordinal='4' />
+                  <column datatype='string' name='Type of Incident' ordinal='5' />
+                  <column datatype='string' name='Type  Location' ordinal='6' />
+                  <column datatype='string' name='Incident Address' ordinal='7' />
+                  <column datatype='real' name='Reporting Area' ordinal='8' />
+                  <column datatype='real' name='Beat' ordinal='9' />
+                  <column datatype='string' name='Division' ordinal='10' />
+                  <column datatype='real' name='Sector' ordinal='11' />
+                  <column datatype='string' name='Council District' ordinal='12' />
+                  <column datatype='datetime' name='Date1 of Occurrence' ordinal='13' />
+                  <column datatype='integer' name='Year1 of Occurrence' ordinal='14' />
+                  <column datatype='string' name='Month1 of Occurence' ordinal='15' />
+                  <column datatype='string' name='Day1 of the Week' ordinal='16' />
+                  <column datatype='datetime' name='Time1 of Occurrence' ordinal='17' />
+                  <column datatype='integer' name='Day1 of the Year' ordinal='18' />
+                  <column datatype='datetime' name='Date2 of Occurrence ' ordinal='19' />
+                  <column datatype='real' name='Year2 of Occurrence' ordinal='20' />
+                  <column datatype='string' name='Month2 of Occurence' ordinal='21' />
+                  <column datatype='string' name='Day2 of the Week' ordinal='22' />
+                  <column datatype='datetime' name='Time2 of Occurrence' ordinal='23' />
+                  <column datatype='real' name='Day2 of the Year' ordinal='24' />
+                  <column datatype='datetime' name='Date of Report' ordinal='25' />
+                  <column datatype='datetime' name='Date incident created' ordinal='26' />
+                  <column datatype='integer' name='Offense Entered Year' ordinal='27' />
+                  <column datatype='string' name='Offense Entered Month' ordinal='28' />
+                  <column datatype='string' name='Offense Entered Day of the Week' ordinal='29' />
+                  <column datatype='datetime' name='Offense Entered Time' ordinal='30' />
+                  <column datatype='integer' name='Offense Entered  Date/Time' ordinal='31' />
+                  <column datatype='string' name='CFS Number' ordinal='32' />
+                  <column datatype='datetime' name='Call Received Date Time' ordinal='33' />
+                  <column datatype='datetime' name='Call Date Time' ordinal='34' />
+                  <column datatype='datetime' name='Call Cleared Date Time' ordinal='35' />
+                  <column datatype='datetime' name='Call Dispatch Date Time' ordinal='36' />
+                  <column datatype='string' name='Person Involvement Type' ordinal='37' />
+                  <column datatype='string' name='Victim Type' ordinal='38' />
+                  <column datatype='integer' name='Responding Officer #1  Badge No' ordinal='39' />
+                  <column datatype='string' name='Responding Officer #1  Name' ordinal='40' />
+                  <column datatype='integer' name='Reporting Officer Badge No' ordinal='41' />
+                  <column datatype='integer' name='Reviewing Officer Badge No' ordinal='42' />
+                  <column datatype='string' name='Element Number Assigned' ordinal='43' />
+                  <column datatype='string' name='Offense Status' ordinal='44' />
+                  <column datatype='string' name='UCR Disposition' ordinal='45' />
+                  <column datatype='string' name='Modus Operandi (MO)' ordinal='46' />
+                  <column datatype='boolean' name='Family Offense' ordinal='47' />
+                  <column datatype='string' name='Drug Related Istevencident' ordinal='48' />
+                  <column datatype='string' name='RMS Code' ordinal='49' />
+                  <column datatype='real' name='Criminal Justice Information Service Code' ordinal='50' />
+                  <column datatype='string' name='Penal Code' ordinal='51' />
+                  <column datatype='string' name='NIBRS Crime' ordinal='52' />
+                  <column datatype='string' name='NIBRS Crime Category' ordinal='53' />
+                  <column datatype='string' name='NIBRS Crime Against' ordinal='54' />
+                  <column datatype='string' name='NIBRS Code' ordinal='55' />
+                  <column datatype='string' name='NIBRS Group' ordinal='56' />
+                  <column datatype='string' name='NIBRS Type' ordinal='57' />
+                  <column datatype='datetime' name='Update Date' ordinal='58' />
+                  <column datatype='real' name='X Coordinate' ordinal='59' />
+                  <column datatype='real' name='Y Cordinate' ordinal='60' />
+                  <column datatype='real' name='Zip Code' ordinal='61' />
+                  <column datatype='string' name='City' ordinal='62' />
+                  <column datatype='string' name='State' ordinal='63' />
+                  <column datatype='string' name='Location1' ordinal='64' />
+                  <column datatype='integer' name='Hour' ordinal='65' />
+                  <column datatype='real' name='Longitude' ordinal='66' />
+                  <column datatype='real' name='Latitude' ordinal='67' />
+                  <column datatype='real' name='Response Time (mins)' ordinal='68' />
+                  <column datatype='real' name='Resolution Time (mins)' ordinal='69' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Arresting Officer'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Arresting Officer</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Responding Officer #1  Name]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Responding Officer #1  Name]' derivation='None' name='[none:Responding Officer #1  Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Responding Officer #1  Name:nk]'>
+            <groupfilter count='20' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([NIBRS Crime Category])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Responding Officer #1  Name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Responding Officer #1  Name:nk]' direction='DESC' using='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' />
+          <slices>
+            <column>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Responding Officer #1  Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Responding Officer #1  Name:nk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]</cols>
+      </table>
+      <simple-id uuid='{9274B04F-095D-45AC-B9DF-B7E37C53D926}' />
+    </worksheet>
+    <worksheet name='Crime Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Crime Map</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column aggregation='Avg' datatype='real' name='[Latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' datatype='real' name='[Longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[Latitude]' derivation='None' name='[none:Latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Longitude]' derivation='None' name='[none:Longitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NIBRS Crime Category]' derivation='None' name='[none:NIBRS Crime Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' />
+              <geometry column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[Geometry (generated)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Latitude:qk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{1418D376-C2DF-468B-BDDE-C2E1A2A38CDF}' />
+    </worksheet>
+    <worksheet name='Crime by Category'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Top 10 Crime Category </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NIBRS Crime Category]' derivation='None' name='[none:NIBRS Crime Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([NIBRS Crime Category])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;ALL OTHER OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;ANIMAL OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;ARSON&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;ASSAULT OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;BRIBERY&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;BURGLARY/ BREAKING &amp; ENTERING&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;COUNTERFEITING / FORGERY&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;CURFEW/ LOITERING/ VAGRANCY VIOLATIONS&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;DESTRUCTION/ DAMAGE/ VANDALISM OF PROPERTY&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;DISORDERLY CONDUCT&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;DRIVING UNDER THE INFLUENCE&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;DRUG/ NARCOTIC VIOLATIONS&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;EMBEZZELMENT&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;EXTORTION/ BLACKMAIL&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;FAMILY OFFENSES, NONVIOLENT&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;FRAUD OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;GAMBLING OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;HOMICIDE OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;HUMAN TRAFFICKING&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;KIDNAPPING/ ABDUCTION&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;LARCENY/ THEFT OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;LIQUOR LAW VIOLATIONS&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;MISCELLANEOUS&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;MOTOR VEHICLE THEFT&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;PORNOGRAPHY/ OBSCENE MATERIAL&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;PUBLIC INTOXICATION&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;ROBBERY&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;STOLEN PROPERTY OFFENSES&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;TRAFFIC VIOLATION - HAZARDOUS&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;TRAFFIC VIOLATION - NON HAZARDOUS&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;TRESPASS OF REAL PROPERTY&quot;' />
+                  <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;WEAPON LAW VIOLATIONS&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='112' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]</cols>
+      </table>
+      <simple-id uuid='{8D234C95-06AB-4CFC-9267-3C3D81677FED}' />
+    </worksheet>
+    <worksheet name='Crime by Division '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Division:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Division:nk]' value='152' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Division:nk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]</cols>
+      </table>
+      <simple-id uuid='{EE8F9D9A-CBE7-4799-AD0F-A139F41D5871}' />
+    </worksheet>
+    <worksheet name='Crime by Hour'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Crime by Hour</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='integer' name='[Hour]' role='measure' type='quantitative' />
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Hour]' derivation='None' name='[none:Hour:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Hour:qk]</cols>
+      </table>
+      <simple-id uuid='{2FAABD8F-1CD2-45AE-93DB-759BC737237B}' />
+    </worksheet>
+    <worksheet name='Crime by Month'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[Month1 of Occurence]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Month1 of Occurence]' derivation='None' name='[none:Month1 of Occurence:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Month1 of Occurence:nk]</cols>
+      </table>
+      <simple-id uuid='{E5B4E482-1FCC-4F5D-AED1-0950C1BF5C59}' />
+    </worksheet>
+    <worksheet name='Crime by Month &amp; Day of Week'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Crime by Month &amp; day </run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[Day1 of the Week]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Month1 of Occurence]' role='dimension' type='nominal' />
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Day1 of the Week]' derivation='None' name='[none:Day1 of the Week:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Month1 of Occurence]' derivation='None' name='[none:Month1 of Occurence:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Day1 of the Week:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Mon&quot;</bucket>
+              <bucket>&quot;Tue&quot;</bucket>
+              <bucket>&quot;Wed&quot;</bucket>
+              <bucket>&quot;Thu&quot;</bucket>
+              <bucket>&quot;Fri&quot;</bucket>
+              <bucket>&quot;Sat&quot;</bucket>
+              <bucket>&quot;Sun&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' />
+              <text column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Day1 of the Week:nk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Month1 of Occurence:nk]</cols>
+      </table>
+      <simple-id uuid='{C0FC52A8-7613-4DCB-94DB-C1EBEF21B12C}' />
+    </worksheet>
+    <worksheet name='Response Time by Division'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Response Time by Division</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[Division]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Response Time (mins)]' role='measure' type='quantitative' />
+            <column-instance column='[Response Time (mins)]' derivation='Avg' name='[avg:Response Time (mins):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Division]' derivation='None' name='[none:Division:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Division:nk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[avg:Response Time (mins):qk]</cols>
+      </table>
+      <simple-id uuid='{E8A7E7E4-B77D-46BF-B442-59B479173360}' />
+    </worksheet>
+    <worksheet name='Top 5 Crimes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Top 5 Crimes</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NIBRS Crime Category]' derivation='None' name='[none:NIBRS Crime Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;ASSAULT OFFENSES&quot;' />
+              <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;DRUG/ NARCOTIC VIOLATIONS&quot;' />
+              <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;LARCENY/ THEFT OFFENSES&quot;' />
+              <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;misc&quot;' />
+              <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;MISCELLANEOUS&quot;' />
+              <groupfilter function='member' level='[none:NIBRS Crime Category:nk]' member='&quot;MOTOR VEHICLE THEFT&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' />
+              <color column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' />
+              <text column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B7678BAB-86CA-43C9-9F39-28C183830932}' />
+    </worksheet>
+    <worksheet name='Top Crime'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Top Crime</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='real' name='[Beat]' role='measure' type='quantitative' />
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='None' name='[none:NIBRS Crime Category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]'>
+            <groupfilter count='1' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Beat])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:NIBRS Crime Category:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='86' />
+            <format attr='width' value='550' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='total-label' data-class='subtotal' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='' />
+            <format attr='color' data-class='total' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='#ffffff' />
+            <format attr='color' data-class='subtotal' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='#ffffff' />
+            <format attr='height-header' value='10' />
+            <format attr='width' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='520' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='bold' />
+            <format attr='font-size' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='28'>&lt;</run>
+                <run bold='true' fontsize='28'>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]</run>
+                <run bold='true' fontsize='28'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BA59EAC8-9ED7-4ABA-9949-67CE7BF81944}' />
+    </worksheet>
+    <worksheet name='Total Incidents'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Total Incidents</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[NIBRS Crime Category]' role='dimension' type='nominal' />
+            <column-instance column='[NIBRS Crime Category]' derivation='Count' name='[cnt:NIBRS Crime Category:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='28'>339,346</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.8570718765258789' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{231E2CDA-D7CC-41C1-B3BD-25D9C98CFEA9}' />
+    </worksheet>
+    <worksheet name='Yearly Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true'>Yearly Trend</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dallas_crime_tableau' name='federated.092ojxb0x6fy5o1d3hff008gtzw7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.092ojxb0x6fy5o1d3hff008gtzw7'>
+            <column datatype='string' name='[Service Number ID]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year1 of Occurrence]' role='measure' type='quantitative' />
+            <column-instance column='[Service Number ID]' derivation='Count' name='[cnt:Service Number ID:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year1 of Occurrence]' derivation='None' name='[none:Year1 of Occurrence:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:Service Number ID:qk]' included-values='in-range'>
+            <min>102732</min>
+            <max>115652</max>
+          </filter>
+          <filter class='quantitative' column='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Year1 of Occurrence:qk]' included-values='in-range'>
+            <min>2022</min>
+            <max>2024</max>
+          </filter>
+          <slices>
+            <column>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Year1 of Occurrence:qk]</column>
+            <column>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:Service Number ID:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:Service Number ID:qk]' scope='rows' value='Count of Crimes Occured' />
+            <encoding attr='space' class='0' field='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:Service Number ID:qk]' field-type='quantitative' max='121745' min='100000' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:Service Number ID:qk]</rows>
+        <cols>[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Year1 of Occurrence:qk]</cols>
+      </table>
+      <simple-id uuid='{E1161048-1245-4D5D-9835-B2065024383C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dallas Crime Analysis Dashboardshboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Benton Sans Book'>Æ                                                       </run>
+            <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Dallas Crime Analysis Dashboard</run>
+            <run bold='true'> (2022 - 2024)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98888' id='29' param='horz' type-v2='layout-flow' w='99374' x='313' y='556'>
+            <zone h='98888' id='24' param='horz' type-v2='layout-flow' w='93124' x='313' y='556'>
+              <zone h='98888' id='21' param='horz' type-v2='layout-flow' w='93124' x='313' y='556'>
+                <zone h='98888' id='15' param='vert' type-v2='layout-flow' w='93124' x='313' y='556'>
+                  <zone fixed-size='130' h='9584' id='16' is-fixed='true' type-v2='title' w='93124' x='313' y='556'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='89304' id='9' param='horz' type-v2='layout-flow' w='93124' x='313' y='10140'>
+                    <zone h='89304' id='7' type-v2='layout-basic' w='93124' x='313' y='10140'>
+                      <zone h='31929' id='3' name='Crime by Category' w='23276' x='313' y='32461'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='35054' id='5' name='Crime by Division ' w='23277' x='313' y='64390'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='54250' id='6' name='Crime Map' w='23104' x='48049' y='10140'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='31960' id='17' name='Crime by Hour' w='24460' x='23589' y='32430'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='35054' id='18' name='Response Time by Division' w='23282' x='23590' y='64390'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='54250' id='19' name='Yearly Trend' w='22284' x='71153' y='10140'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='35054' id='22' name='Top 5 Crimes' w='23284' x='70153' y='64390'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='22321' id='25' name='Total Incidents' w='23276' x='313' y='10140'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='22290' id='26' name='Top Crime' w='24460' x='23589' y='10140'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                      <zone h='35054' id='27' name='Crime by Month &amp; Day of Week' w='23281' x='46872' y='64390'>
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='none' />
+                          <format attr='border-width' value='0' />
+                          <format attr='margin' value='4' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98888' id='28' is-fixed='true' param='vert' type-v2='layout-flow' w='6250' x='93437' y='556'>
+              <zone h='5070' id='30' name='Crime by Month &amp; Day of Week' pane-specification-id='0' param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' type-v2='color' w='6250' x='93437' y='556'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Benton Sans Book'>Æ                                                       </run>
+                <run bold='true' fontcolor='#000000' fontname='Benton Sans Book'>Dallas Crime Analysis Dashboard</run>
+                <run bold='true'> (2022 - 2024)</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2650' minheight='2650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98518' id='33' param='vert' type-v2='layout-flow' w='99166' x='417' y='741'>
+                <zone fixed-size='130' h='12778' id='16' type-v2='title' w='90833' x='417' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='164' h='21431' id='25' is-fixed='true' name='Total Incidents' w='22704' x='417' y='13519'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='163' h='21401' id='26' is-fixed='true' name='Top Crime' w='23858' x='23121' y='13519'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52085' id='6' is-fixed='true' name='Crime Map' w='22536' x='46979' y='13519'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52085' id='19' is-fixed='true' name='Yearly Trend' w='21735' x='69515' y='13519'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='238' h='30684' id='17' is-fixed='true' name='Crime by Hour' w='23858' x='23121' y='34920'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='237' h='30654' id='3' is-fixed='true' name='Crime by Category' w='22704' x='417' y='34950'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='33655' id='5' is-fixed='true' name='Crime by Division ' w='22705' x='417' y='65604'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='33655' id='18' is-fixed='true' name='Response Time by Division' w='22709' x='23122' y='65604'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='33655' id='27' is-fixed='true' name='Crime by Month &amp; Day of Week' w='22708' x='45831' y='65604'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6760' id='30' name='Crime by Month &amp; Day of Week' pane-specification-id='0' param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' type-v2='color' w='8333' x='91250' y='741'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='261' h='33655' id='22' is-fixed='true' name='Top 5 Crimes' w='22711' x='68539' y='65604'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F50F8BCC-A8F5-4380-A821-9B6C28299401}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Crime by Category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8AEE60EC-055B-4714-969E-381F62032962}' />
+    </window>
+    <window class='worksheet' name='Crime by Division '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E6F5A613-034E-4239-914B-C859F7BCC885}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dallas Crime Analysis Dashboardshboard 1'>
+      <viewpoints>
+        <viewpoint name='Crime Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime by Category' />
+        <viewpoint name='Crime by Division ' />
+        <viewpoint name='Crime by Hour'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Crime by Month &amp; Day of Week' />
+        <viewpoint name='Response Time by Division' />
+        <viewpoint name='Top 5 Crimes' />
+        <viewpoint name='Top Crime' />
+        <viewpoint name='Total Incidents' />
+        <viewpoint name='Yearly Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='16' />
+      <device-preview selected='Desktop' visible='true'>
+        <device name='Large Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{87F31321-0502-42D7-9BAC-1164572A2EBF}' />
+    </window>
+    <window class='worksheet' name='Crime by Month &amp; Day of Week'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:NIBRS Crime Category:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{76226437-E873-4772-91EE-89C9F189240E}' />
+    </window>
+    <window class='worksheet' name='Crime by Hour'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{26869EC4-6EA5-4EFB-B7DD-61FB0B3750E8}' />
+    </window>
+    <window class='worksheet' name='Crime Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{263FEC39-D656-4930-90A9-31A0C951C225}' />
+    </window>
+    <window class='worksheet' name='Crime by Month'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{557FB8FA-0B8D-47F5-B6A9-B1850037F219}' />
+    </window>
+    <window class='worksheet' name='Response Time by Division'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{18F1892F-FB02-4B06-8633-DD904FF5F045}' />
+    </window>
+    <window class='worksheet' name='Yearly Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[cnt:Service Number ID:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:Year1 of Occurrence:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E660C54D-8AF5-457D-BDD1-D192F61B7A04}' />
+    </window>
+    <window class='worksheet' name='Top 5 Crimes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.092ojxb0x6fy5o1d3hff008gtzw7].[none:NIBRS Crime Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{33508464-92C1-4CC2-9FFF-D3E44329EB99}' />
+    </window>
+    <window class='worksheet' name='Total Incidents'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8A31234B-FA3D-4293-9C2C-D2B66644EF70}' />
+    </window>
+    <window class='worksheet' name='Top Crime'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='50'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B2F5AF45-667C-446A-A400-5FEF51270729}' />
+    </window>
+    <window class='worksheet' name='Arresting Officer'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C264C92D-A4AA-4DA3-8E89-DF05E29CBFEE}' />
+    </window>
+  </windows>
+</workbook>
