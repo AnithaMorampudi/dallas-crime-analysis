@@ -1,7 +1,7 @@
 # Dallas Crime Analysis & Prediction
 
 ## Overview
-This project analyzes Dallas Police Department crime incident data from January 2022 to January 2025, covering 337,796 incidents across 65 variables. The goal is to uncover crime patterns, build a machine learning classifier, and visualize insights through an interactive Tableau dashboard.
+This project analyzes Dallas Police Department crime incident data from 2022 to 2024, covering 337,796 incidents across 65 variables. The goal is to uncover crime patterns, build a machine learning classifier, and visualize insights through an interactive Tableau dashboard.
 
 ## Project Structure
 - `dallas_crime_analysis.ipynb` — Main Jupyter notebook with full analysis
@@ -34,6 +34,9 @@ Built a Random Forest classifier to predict crime category based on time and loc
 ## Tableau Dashboard
 Interactive dashboard published on Tableau Public:
 [Dallas Crime Analysis Dashboard](https://public.tableau.com/app/profile/anitha.morampudi/viz/DallasCrimeAnalysisDashboard/DallasCrimeAnalysisDashboardshboard1)
+
+## Dallas Crime dashboard 
+![dashboard](dashboard.png)
 
 ## Tools Used
 - Python (pandas, numpy, matplotlib, seaborn, scikit-learn, XGBoost, folium)
