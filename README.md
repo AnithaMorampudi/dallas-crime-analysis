@@ -26,7 +26,7 @@ Built a Random Forest classifier to predict crime category based on time and loc
 
 ## Interactive Maps
 - [Crime Heatmap](https://anithaMorampudi.github.io/dallas-crime-analysis/dallas_crime_heatmap.html) — Crime density across Dallas
-- [Crime Choropleth](https://anithaMorampudi.github.io/dallas-crime-analysis/dallas_crime_choropleth.html) — Crime by zip code
+- [Crime Choropleth](https://github.com/AnithaMorampudi/dallas-crime-analysis/blob/main/dallas_crime_choropleth.html) — Crime by zip code
 
 ## Tableau Dashboard
 Interactive dashboard published on Tableau Public:
